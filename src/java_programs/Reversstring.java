@@ -7,7 +7,7 @@ public class Reversstring {
 		String string = "esreveR retfA";
 		int nos = string.length();
 	String rev="";
-		System.out.println(nos);
+	
 		for (int i= nos-1 ;i>=0;i--)
 		{
 			rev = rev+string.charAt(i);

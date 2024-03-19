@@ -7,8 +7,8 @@ public class anagram {
 
 
 	public static void main(String[] args) {
-		String a ="12A3456789";
-		String b = "9876543A21";
+		String a ="Saigaurav";
+		String b = "vagauiasr";
 
 		a = a.toLowerCase();
 		b=b.toLowerCase();

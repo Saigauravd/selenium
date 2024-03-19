@@ -19,7 +19,7 @@ public class WindowH {
 		WebDriver Driver = new ChromeDriver();
 		int count=1;
 		Driver.get("https://nxtgenaiacademy.com/multiplewindows/");
-		Driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
 
 
