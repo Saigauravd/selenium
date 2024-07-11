@@ -27,8 +27,8 @@ public class anagram {
 		{
 			char [ ]ac = a.toCharArray();
 			char []bc = b.toCharArray();
-			System.out.println(ac);
-			System.out.println(bc);
+	//		System.out.println(ac);
+		//	System.out.println(bc);
 			Arrays.sort(ac);
 			Arrays.sort(bc);
 			System.out.println(ac);

@@ -21,7 +21,7 @@ public class FrequencyofNumber {
 				for (int j = i+1; j < size; j++){
 					if (array[i] == array[j]){
 						flag = 1;
-						break;
+						//break;
 					}
 				}
 

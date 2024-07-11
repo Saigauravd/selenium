@@ -28,7 +28,8 @@ public class Waits {
 	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='target-text']")));
 	
 		driver.findElement(By.xpath("//button[@id='enable-button']")).click(); 
-		FluentWait<WebDriver> flu = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(20)).pollingEvery(Duration.ofSeconds(3)).ignoring(NoSuchElementException.class);
+		FluentWait<WebDriver> flu = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(20))
+				.pollingEvery(Duration.ofSeconds(3)).ignoring(NoSuchElementException.class);
 		
 		flu.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='disable']"))).click();
 	 

@@ -17,6 +17,6 @@ public class FindMissingNumber {
     }
 }
 
-// Here the expectedSum is taking avg of length array mean (7+8)/2
+// Here the expectedSum is taking avg of length array mean (7*8)/2
 //It give the number then adds all numbers in an array and subtracting from avg
 

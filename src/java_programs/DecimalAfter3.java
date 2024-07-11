@@ -8,8 +8,8 @@ public class DecimalAfter3 {
 	        StringBuilder formattedNumber = new StringBuilder(phoneNumber);
 	        formattedNumber.insert(3, '.');
 	        formattedNumber.insert(7, '.');
-	        
-	        System.out.println("Formatted Phone Number: " + formattedNumber.toString());
+	     //   formattedNumber.reverse();
+	        System.out.println("Formatted Phone Number: " + formattedNumber);
 	    }
 
 }
