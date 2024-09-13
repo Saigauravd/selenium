@@ -2,6 +2,7 @@ package selenium;
 
 import java.awt.RenderingHints.Key;
 import java.time.Duration;
+import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -17,34 +18,21 @@ public class WindowH {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver Driver = new ChromeDriver();
-		int count=1;
-		Driver.get("https://nxtgenaiacademy.com/multiplewindows/");
+		int count=1;Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+		Driver.get("https://www.hyrtutorials.com/p/window-handles-practice.html");
 		Driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
 
 
-		Driver.findElement(By.xpath("//div[@class='elementor-element elementor-element-d5cad06 elementor-widget elementor-widget-html']//button[@id='button1']")).click();
+		Driver.findElement(By.xpath("//button[@id='newWindowBtn']")).click();
 
-		String hand =  Driver.getWindowHandle();
+		Set<String> hand =  Driver.getWindowHandles();
 
-		Driver.switchTo().window(hand);
-		Driver.findElement(By.xpath("//div[@class='elementor-element elementor-element-d94c712 elementor-widget elementor-widget-html']//button[@id='button1']")).click();
-
-		Driver.switchTo().window(hand);
-		Driver.findElement(By.xpath("//div[@class='elementor-element elementor-element-f5f0e8d elementor-widget elementor-widget-html']//button[@id='button1']")).click();
-
-		Driver.switchTo().window(hand);
-		Driver.findElement(By.xpath("//a[normalize-space()='New Browser Tab Link']")).click();
-
-		Set<String> allwin = Driver.getWindowHandles();
-
-		for (String Wind:allwin)
-		{
-
-			System.out.println(Wind);
-			System.out.println( Driver.getTitle()+count++);
-		}
-
+		Iterator<String> st   = hand.iterator();
+		
+st.next();
+System.out.println(Driver.findElement(By.xpath("//img[@id='Header1_headerimg']")).getText());
 	}
 
 }

@@ -28,6 +28,11 @@ public class SaparatheString {
 			}
 		}
 		System.out.println(inte);
+		for(char z:ch)
+		{
+			System.out.print(z);
+			
+		}
 		System.out.println(ch);
 		System.out.println(sym);
 	}

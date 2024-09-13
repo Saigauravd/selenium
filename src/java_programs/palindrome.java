@@ -25,7 +25,23 @@ public class palindrome {
 	System.out.println(" not Palindrome");
 
 }
-	
-	
+	 String st = "Nitin";
+	 st=st.toLowerCase();
+	 String timi;String ss = "";
+	 timi = st;
+	 
+	 for(int i=st.length()-1;i>=0;i--)
+	 {
+		 ss = ss+st.charAt(i);
+		 
+	 }
+	 if (timi.equals(ss))
+		{
+		System.out.println("Palindrome");
+	}else
+	{
+		System.out.println(" not Palindrome");
+
+	}
  }
 }
